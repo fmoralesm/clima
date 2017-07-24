@@ -4,7 +4,7 @@ function obtenerClima(){
 	alert(URL);
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
-    xmlhttp.open("POST", URL, false);
+    xmlhttp.open("POST", URL);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
     xmlhttp.send(ItemJSON);

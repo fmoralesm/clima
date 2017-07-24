@@ -12,13 +12,13 @@
             <div class="contenedor-formulario">
                 <form>
                     <label>Ciudad</label>
-                    <input type="text" name="Ciudad" list="Ciudades">
+                    <input id="idCiudad" type="text" name="Ciudad" list="Ciudades">
                     <datalist id="Ciudades">                
                     </datalist>
-                    <button>Consultar Clima</button>
+                    <button onClick="obtenerClima('London')">Consultar Clima</button>
                 </form>            
             </div>
         </div>
-        <script src="script.js"/>
+        <script src="script.js"></script>
     </body>
 </html>
