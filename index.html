@@ -5,8 +5,20 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>  
-        
-
+        <div class="contenedor">
+            <div class="contenedor-cabecera">
+                <h2>Clima</h2>
+            </div>
+            <div class="contenedor-formulario">
+                <form>
+                    <label>Ciudad</label>
+                    <input type="text" name="Ciudad" list="Ciudades">
+                    <datalist id="Ciudades">                
+                    </datalist>
+                    <button>Consultar Clima</button>
+                </form>            
+            </div>
+        </div>
         <script src="script.js"/>
     </body>
 </html>

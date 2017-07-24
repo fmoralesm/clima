@@ -1,0 +1,40 @@
+:root{
+--main-color-primary-0: #00D830 ;	
+--main-color-primary-1: #4CDF6D ;
+--main-color-primary-2: #22DA4B ;
+--main-color-primary-3: #00AD26 ;
+--main-color-primary-4: #00871E ;
+
+--main-color-secondary-1-0: #04A3C1 ;	
+--main-color-secondary-1-1: #49B7CC ;
+--main-color-secondary-1-2: #23ABC4 ;
+--main-color-secondary-1-3: #02778D ;
+--main-color-secondary-1-4: #025D6E ;
+
+--main-color-secondary-2-0: #96F300 ;	
+--main-color-secondary-2-1: #B7F554 ;
+--main-color-secondary-2-2: #A5F326 ;
+--main-color-secondary-2-3: #83D400 ;
+--main-color-secondary-2-4: #66A500 ;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+h1{
+    color: var(--main-color-primary-4)
+}
+
+body{
+    background-color: var(--main-color-secondary-1-1)
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 50%;
+}
+.contenedor-cabecera{
+    background-color: var(--main-color-primary-0);   
+    
+}
