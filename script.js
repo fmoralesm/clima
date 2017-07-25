@@ -41,28 +41,6 @@ function appendCiudades(){
 }
 
 function obtenerClima(){
-<<<<<<< HEAD
-	var city = document.getElementById("idCiudad").value;
-	URL = "api.openweathermap.org/data/2.5/weather?q=" + city;
-	alert(URL);
-	var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
-    xmlhttp.open("POST", URL);
-    xmlhttp.setRequestHeader("Content-Type", "application/json");
-    xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
-    xmlhttp.send(ItemJSON);
-    alert(xmlhttp.responseText);
-}
-
-function callbackFunction(xmlhttp) {
-    alert(xmlhttp.responseXML);
-}
-
-function cargaCiudades(){
-    var ciudades = JSON.parse(city);
-    alert(ciudades[1].name);
-}
-=======
         var myArr;
         var resp;
         var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c4802016ab64067cddcc12fca57b6989";
@@ -78,7 +56,7 @@ function cargaCiudades(){
 
         };
 
-        xmlhttp.open("GET", "/clima.json", true);
+        xmlhttp.open("GET", url, true);
         xmlhttp.send();
 
         
@@ -142,4 +120,3 @@ function cargaCiudades(){
     }
 
     
->>>>>>> 5a1dd4ad19a421eb1996a3a4ee593ba490ad4087
