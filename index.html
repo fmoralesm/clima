@@ -3,22 +3,42 @@
     <head>
         <title>Clima</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="script.js"></script>
     </head>
-    <body>  
+    <body onload="appendCiudades()">  
         <div class="contenedor">
             <div class="contenedor-cabecera">
                 <h2>Clima</h2>
             </div>
             <div class="contenedor-formulario">
-                <form>
+                
                     <label>Ciudad</label>
                     <input id="idCiudad" type="text" name="Ciudad" list="Ciudades">
                     <datalist id="Ciudades">                
+                        <option value=>
                     </datalist>
-                    <button onClick="obtenerClima('London')">Consultar Clima</button>
-                </form>            
+                    <button onClick="requestCiudades()">Consultar Clima</button>
+                
+            </div>
+            <div class="contenedor-climas">
+                <div class="contenedor-clima-hoy">
+                    <div class="fecha">
+                        
+                    </div>
+                    <div class="temperatura">
+                        
+                    </div>
+                </div>          
+                <div class="contenedor-clima-semana">
+                    <div class="fecha">
+                        
+                    </div>
+                    <div class="temperatura">
+                        
+                    </div>
+                </div>          
             </div>
         </div>
-        <script src="script.js"></script>
+        
     </body>
 </html>
